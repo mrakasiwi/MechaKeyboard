@@ -1,0 +1,92 @@
+<!--
+<div class="row">
+  <div class="col xs-12">
+    <ul class="list-group" *ngIf="collectedItems.length > 0" >
+      <li class="list-group-item" *ngFor="let item of collectedItems">
+        <button class="btn btn-danger" (click)="onRemoveFromCollection(item)">X</button>&nbsp;
+        <img src="{{item.gambar_produk}}" width="75" height="50">
+          {{ item.nama }}  
+          <span class="badge">Rp. {{ item.harga }}</span>
+      </li>
+    </ul>
+    <h3 *ngIf="collectedItems.length === 0">Mulai menambah barang ke Cart</h3>
+	<div *ngIf="collectedItems.length > 0" > 
+	<button class="btn btn-success" [routerLink]="['/pemesanan']">CheckOut</button>
+	</div>
+  </div>
+</div>
+-->
+
+ <div class="menu">
+                        <div class="navbar">
+    <!-- Form Cart -->
+    <div class="row">
+		<div class="span12">
+			<div class="well well-small">
+				<br/>
+					<h2>Shopping Cart</h2>
+				<hr class="soften"/>    
+
+				<table class="table table-bordered table-condensed">
+					<thead>
+						<tr>
+						  <th>Action</th>
+						  <th>Produk</th>
+						  <th>Deskripsi</th>
+						  <th>Harga</th>
+						  <th>Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let item of collectedItems">
+						  <td><button class="btn btn-danger" (click)="onRemoveFromCollection(item)">X</button>&nbsp;</td>
+						  <td><img width="100" src="img/img1.jpg" alt=""></td>
+						  <td>{{item.nama}}<br>{{item.manufacturer}}<br>{{item.switch_type}}</td>
+						  <td>{{item.harga}}</td>
+						  <td>{{item.harga}}</td>
+						</tr>
+					<tr>
+						<td colspan="4" class="alignR">Total products :    </td>
+						<td colspan="1" class="alignR">Rp. 3990000</td>
+					</tr>
+					</tbody>
+				</table><br/>
+				
+            </div>
+		</div>
+    </div>
+		
+        <!-- Form Cart -->
+
+                    <div class="btn_form">
+                        <form >
+                        <input class="shopBtn btn-large pull-left" type="submit" (click)="goBack()" value="Kembali Belanja" >
+                        </form>
+                        
+						<div *ngIf="collectedItems.length > 0" > 
+							<button class="shopBtn btn-large pull-right" [routerLink]="['/pemesanan']">CheckOut</button>
+						</div>
+                    </div>
+</div>
+    </div>
+
+    <script src="js/jquery-1.9.1.js"></script> 
+    <script src="js/bootstrap.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/AnimOnScroll.js"></script>
+    
+    <script>
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      } );
+    </script>
+<script>
+$('#myCarousel').carousel({
+    interval: 1800
+});
+</script>
+        

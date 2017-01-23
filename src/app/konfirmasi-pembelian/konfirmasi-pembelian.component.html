@@ -1,0 +1,33 @@
+          <div class="register_account">
+          	<div class="wrap">
+    	      <h2 class="title">KONFIRMASI PEMBELIAN</h2>
+			  <br />
+			  <hr />
+    		   <form>
+    			 <div class="col_1_of_2 span3">
+				 <h3>Produk</h3>
+				 <br /><hr />
+		   			<div *ngFor="let item of collectedItems">
+						<span>{{item.nama}}</span><br />
+						<span class="badge">Rp. {{ item.harga }}</span>
+						<hr />
+					</div>
+		    	 </div>
+		    	  <div class="col_1_of_2 span3">	
+					<h3>Alamat Pengiriman</h3>
+					<br /><hr />
+		   			<div>
+						<h4>Nama			: {{myName}}</h4>
+						<h4>Alamat			: {{myAddress}}</h4>
+						<h4>Provinsi		: {{myProv}}</h4>
+						<h4>Kota			: {{myKota}}</h4>
+						<h4>Kode POS		: {{myPos}}</h4>
+						<h4>No. Hp			: {{myhp}}</h4>
+						<h4>Rekening Tujuan		: {{myrek}}</h4>
+					</div>
+		          </div>
+		      <button class="shopBtn btn-large pull-right" [routerLink]="['/show_message']">CheckOut</button>
+		    <div class="clear"></div>
+		    </form>
+    	</div>
+    </div>

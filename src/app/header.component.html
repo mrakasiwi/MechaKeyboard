@@ -1,0 +1,83 @@
+<!--
+<div class="div">
+  <div class="col-xs-12">
+    <ul class="nav nav-pills">
+      <li routerLinkActive="active"><a [routerLink]="['/cart']">Cart</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/home']">Item</a></li>
+    </ul>
+  </div>
+</div>
+-->
+
+
+                <div class="top-bar b-radius">
+                    <div class="top-content">
+                        <ul>
+                            <li><a href="index.html"><img src="img/keyboard.png" alt="" width="285" height="60"></a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a  [routerLink]="['/cart']"><img src="img/cart.png" alt="" height="130" width="130"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-header">
+
+
+                     <!-- Site Name starts here -->
+
+                    <div class="site-name">
+                        <h1>MECHAKeyboard Indonesia</h1>
+                        <h5>Cari keyboard? Disini Tempatnya</h5>
+                    </div>
+
+                    <!-- Site Name ends -->
+
+                     <!-- Menu starts here -->
+                    <div class="menu">
+                        <div class="navbar">
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                               <i class="fw-icon-th-list"></i>
+                            </a>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="#">Beranda</a></li>
+                                    <li><a href="#">Produk</a></li>
+                                    <li><a href="#l">Konfirmasi Pembayaran</a></li>
+                                </ul>
+                                <form class="search-form">
+                                    <div class="input-append ">
+                                        <input type="text" class="search-query input-large" placeholder="cari keyboard">
+                                        <button type="submit" class="btn"><i class="icon-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu ends -->
+                </div>
+                <br/>
+                <!-- Main content ends here -->
+                
+				
+       <script src="js/jquery-1.9.1.js"></script> 
+<script src="js/bootstrap.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/AnimOnScroll.js"></script>
+    
+    <script>
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      } );
+    </script>
+<script>
+$('#myCarousel').carousel({
+    interval: 1800
+});
+</script>

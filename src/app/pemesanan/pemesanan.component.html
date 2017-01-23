@@ -1,0 +1,84 @@
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+       
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="css/custom-styles.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/component.css">
+        <link rel="stylesheet" href="css/font-awesome-ie7.css">
+        
+        
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+<!--
+          <div class="register_account">
+          	<div class="wrap">
+    	      <h4 class="title">ALAMAT TUJUAN PENGIRIMAN</h4>
+    		   <form>
+    			 <div class="col_1_of_2 span_1_of_2">
+		   			 <div><input #name type="text" value="Nama" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama';}"></div>
+		    			<div><input #address type="text" value="Alamat" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Alamat';}"></div>
+						<div><select #provinsi id="country" name="Provinsi" onchange="change_country(this.value)" class="frm-field required">
+						<option value="null">Provinsi</option>         
+						<option value="Aceh">Aceh</option>
+						<option value="Jawa Barat">Jawa Barat</option>
+						</select></div>		        
+		    			<div><input #kode_pos type="text" value="Kode_POS" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Kode Pos';}"></div>
+		    	 </div>
+				 
+		    	  <div class="col_1_of_2 span_1_of_2">	
+					<div><input #hp type="text" value="hp" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nomor Telpon';}"></div>
+		    		<div><select #kota id="country" name="Kota" onchange="change_country(this.value)" class="frm-field required">
+		            <option value="null">Kota</option>         
+		            <option value="Bandung">Bandung</option>
+		            <option value="Jakarta">Jakarta</option>
+		         </select></div>		        
+		           <div>
+		          </div>
+		          	
+		          </div>
+		      <a [routerLink]="['/pembayaran']"> <button class="btn btn-success" (click)="send(name.value, address.value,provinsi.value, kota.value, kode_pos.value, hp.value)">Lanjutkan pemesanan</button></a>
+			<div class="clear"></div>
+		    </form>
+    	</div>
+    </div>
+	-->
+	                <div class="featured-slider">
+                      <h1> Alamat Pemesanan</h1>
+                      <br/>
+                      <br/>
+                      <div><input #name type="text" value="Nama" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama';}"></div>
+                      <div><input #address type="text" value="Alamat" onfocus="this.value = '';"  onblur="if (this.value == '') {this.value = 'Alamat';}"></div>
+
+                      <div><select #provinsi id="Provinsi" name="provinsi" onchange="change_country(this.value)" class="frm-field required">
+                      <option value="null">Provinsi</option>         
+                      <option value="Aceh">Aceh</option>
+                      <option value="Jawa Barat">Jawa Barat</option>
+                      <option value="Bali">Bali</option>
+                      </select></div>
+                      <div><select #kota id="Kota" name="kota" onchange="change_country(this.value)" class="frm-field required">
+                      <option value="null">Kota</option>         
+                      <option value="Lhokseumawe">Lhokseumawe</option>
+                      <option value="Bandung">Bandung</option>
+                      <option value="Denpasar">Denpasar</option>
+                      </select></div>
+
+                      <div><input  #kode_pos type="text" value="Kode Pos" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Kode_Pos';}"></div>
+                      <div><input #hp type="text" value="No Telp/Hp" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'No_Telp/Hp';}"></div>
+					  <div><select #rek id="Rekening" name="Rekening" onchange="change_rek(this.value)" class="frm-field required">
+                      <option value="null">Pilih Bank Tujuan</option>         
+                      <option value="BNI - 987329874">BNI</option>
+                      <option value="BCA - 4918749839823">BCA</option>
+                      <option value="MANDIRI - 1239308542344">MANDIRI</option>
+                      </select></div>
+                      <div class="btn_form">
+						<a [routerLink]="['/konfirmasi_pembelian']"> <button class="btn btn-success" (click)="send(name.value, address.value,provinsi.value, kota.value, kode_pos.value, hp.value, rek.value)">Lanjutkan pemesanan</button></a>
+                      </div>
+
+                    </div>
+                
